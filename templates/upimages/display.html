@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {%for image in up_images%}
+      name :{{image.name}}
+      image_path:{{image.image.url}}
+      image_display:<img src="{{image.image.url}}" alt="here">
+    {%endfor%}
+
+  </body>
+</html>
